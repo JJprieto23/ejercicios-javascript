@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicios en JavaScript</title>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+  <header>
+    <div class="d-flex flex-row mb-3">
+      <img class="me-5 ms-5 mt-3" src="assets/img/js.svg" width="90" height="90" />
+      <h1 class="text-start w-75 mt-4 float-end">Ejercicios en JavaScript</h1>
+    </div>
+    <nav class="navbar bg-primary" data-bs-theme="dark">
+      <div class="btn-group me-5 ms-5 w-100 row" role="group" aria-label="Second group">
+        <div class="col">
+          <a href="index.html" class="btn btn-dark w-100" aria-label="Default select example">
+            Condicionales
+          </a>
+        </div>
+        <div class="dropdown col">
+          <button class="form-select" type="button" data-bs-toggle="dropdown" aria-label="Default select example">
+            Condicionales
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="#C1"><button class="dropdown-item" type="button">Deteccion de positivos y negativos</button></a>
+            </li>
+            <li><a href="#C2"><button class="dropdown-item" type="button">Mayor o menor (2 numeros)</button></a></li>
+            <li><a href="#C3"><button class="dropdown-item" type="button">Mayor o menor (3 numeros positivos)</button></a>
+            </li>
+            <li><a href="#C4"><button class="dropdown-item" type="button">Suma o resta (A B)</button></a></li>
+            <li><a href="#C5"><button class="dropdown-item" type="button">Divicion</button></a></li>
+            <li><a href="#C6"><button class="dropdown-item" type="button">Suma y multiplicacion enteros</button></a></li>
+            <li><a href="#C7"><button class="dropdown-item" type="button">Año bisiesto</button></a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <a href="Cycles.html" class="btn btn-dark w-100" aria-label="Default select example">
+            Ciclos
+          </a>
+        </div>
+        <div class="col">
+          <a href="Arrays.html" class="btn btn-dark w-100" aria-label="Default select example">
+            Arreglos
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="container mb-5">
+    <h2 class="mt-5">
+      Condicionales
+    </h2>
+    <div class="position-relative w-75 p-4">
+      <h3 id="C1">
+        1. Deteccion de positivos y negativos
+      </h3>
+      <form>
+        <div class="mb-5">
+          <label for="exampleInputNumber" class="form-label">Ingrese un numero</label>
+          <input type="email" class="form-control border border-black" id="exampleInputNumber"
+            aria-describedby="emailHelp">
+        </div>
+        <div class="position-absolute bottom-0 end-0">
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </div>
+      </form>
+    </div>
+    <div class="position-relative w-75 p-4">
+      <h3 id="C2">
+        2. Mayor o menor (2 numeros)
+      </h3>
+      <form>
+        <div class="mb-3">
+          <label for="exampleInputNumber" class="form-label">Ingrese numero 1</label>
+          <input type="email" class="form-control border border-black" id="exampleInputNumber"
+            aria-describedby="emailHelp">
+        </div>
+        <div class="mb-5">
+          <label for="exampleInputNumber" class="form-label">Ingrese numero 2</label>
+          <input type="password" class="form-control border border-black" id="exampleInputNumber">
+        </div>
+        <div class="position-absolute bottom-0 end-0">
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </div>
+      </form>
+    </div>
+    <div class="position-relative w-75 p-4">
+      <h3 id="C3">
+        3. Mayor o menor (3 numeros positivos)
+      </h3>
+      <form>
+        <div class="mb-3">
+          <label for="exampleInputNumber" class="form-label">Ingrese numero 1</label>
+          <input type="number" class="form-control border border-black" id="exampleInputNumber" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputNumber" class="form-label">Ingrese numero 2</label>
+          <input type="number" class="form-control border border-black" id="exampleInputNumber">
+        </div>
+        <div class="mb-5">
+          <label for="exampleInputNumber" class="form-label">Ingrese numero 3</label>
+          <input type="number" class="form-control border border-black" id="exampleInputNumber">
+        </div>
+        <div class="position-absolute bottom-0 end-0">
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </div>
+      </form>
+    </div>
+    <div class="position-relative w-75 p-4">
+      <h3 id="C4">
+        4. Suma o resta (A B)
+      </h3>
+      <form>
+        <div class="mb-3">
+          <label for="exampleInputNumber" class="form-label">Ingrese numero A</label>
+          <input type="number" class="form-control border border-black" id="exampleInputNumber">
+        </div>
+        <div class="mb-5">
+          <label for="exampleInputNumber" class="form-label">Ingrese numero B</label>
+          <input type="number" class="form-control border border-black" id="exampleInputNumber">
+        </div>
+        <div class="position-absolute bottom-0 end-0">
+          <button type="submit" class="btn btn-primary">Calcular</button>
+        </div>
+      </form>
+    </div>
+    <div class="position-relative w-75 p-4">
+      <h3 id="C5">
+        5. Divicion
+      </h3>
+      <form>
+        <div class="mb-3">
+          <label for="exampleInputNumber" class="form-label">Ingrese dividendo</label>
+          <input type="number" class="form-control border border-black" id="exampleInputNumber"
+            aria-describedby="emailHelp">
+        </div>
+        <div class="mb-5">
+          <label for="exampleInputNumber" class="form-label">Ingrese divisor</label>
+          <input type="number" class="form-control border border-black" id="exampleInputNumber" aria-describedby="emailHelp">
+        </div>
+        <div class="position-absolute bottom-0 end-0">
+          <button type="submit" class="btn btn-primary">Dividir</button>
+        </div>
+      </form>
+    </div>
+    <div class="position-relative w-75 p-4">
+      <h3 id="C6">
+        6. Suma y multiplicacion enteros
+      </h3>
+      <form>
+        <div class="mb-3">
+          <label for="exampleInputNumber" class="form-label">Ingrese numero 1</label>
+          <input type="number" class="form-control border border-black" id="exampleInputNumber"
+            aria-describedby="emailHelp">
+        </div>
+        <div class="mb-5">
+          <label for="exampleInputNumber" class="form-label">Ingrese numero 2</label>
+          <input type="number" class="form-control border border-black" id="exampleInputNumber">
+        </div>
+        <div class="position-absolute bottom-0 end-0 pt-3">
+          <button type="submit" class="btn btn-primary">Sumar/Dividir</button>
+        </div>
+      </form>
+    </div>
+    <div class="position-relative w-75 p-4">
+      <h3 id="C7">
+        7. Año bisiesto
+      </h3>
+      <form>
+        <div class="mb-5">
+          <label for="exampleInputNumber" class="form-label">Ingrese el año</label>
+          <input type="number" class="form-control border border-black" id="exampleInputNumber"
+            aria-describedby="emailHelp">
+        </div>
+        <div class="position-absolute bottom-0 end-0">
+          <button type="submit" class="btn btn-primary">Calcular</button>
+        </div>
+      </form>
+    </div>
+  </main>
+  <footer class="bg-dark text-white">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-md-4">
+          <h3>Sobre Nosotros</h3>
+          <p>Centro de Gestión de Mercados, Logística y Tecnologías de la Información.<br>
+            Análisis y Desarrollo de Software.<br>
+            Ficha 2902082.<br>
+            Joan Moreno y Julian Prieto.
+          </p>
+        </div>
+        <div class="col-md-4">
+          <h3>Enlaces Útiles</h3>
+          <ul class="list-unstyled">
+            <li><a href="index.html">Operadores</a></li>
+            <li><a href="Conditionals.html">Condicionales</a></li>
+            <li><a href="Cycles.html">Ciclos</a></li>
+            <li><a href="Arrays.html">Arreglos</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h3>Contacto</h3>
+          <ul class="list-unstyled list-inline">
+            <li class="list-inline-item"><a href="https://oferta.senasofiaplus.edu.co/sofia-oferta/">Sofia Plus<i class="fab fa-facebook-f"></i></a></li>
+            <li class="list-inline-item"><a href="https://sena.territorio.la/cms/index.php">Sena Virtual<i class="fab fa-twitter"></i></a></li>
+            <li class="list-inline-item"><a href="https://mercadoslogisticaytecnologia.blogspot.com">Blog del Centro<i class="fab fa-instagram"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="bg-secondary text-center py-3">
+      <p class="m-0">&copy; 2024 Ejercicios Programación. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+
+</html>
